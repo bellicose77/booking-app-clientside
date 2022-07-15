@@ -7,6 +7,7 @@ const Navbar = () => {
               <span></span>
               <div>
                 <button>Register</button>
+                <button>Login</button>
               </div>
             </div>
             
