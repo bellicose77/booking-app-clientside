@@ -19,8 +19,8 @@ const Header = () => {
                   <span>Flights</span>
               </div>
               <div className='headerListItem'>
-                 <FontAwesomeIcon icon={faPlane} />
-                  <span>Flights</span>
+                 <FontAwesomeIcon icon={faCarSide} />
+                  <span>Cars</span>
               </div>
         </div>
            
