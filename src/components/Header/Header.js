@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 import {
     faBed, faCarSide, faPaperPlane, faPlane, faTaxi,
   
