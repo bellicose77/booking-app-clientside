@@ -22,6 +22,10 @@ const Header = () => {
                  <FontAwesomeIcon icon={faCarSide} />
                   <span>Cars</span>
               </div>
+              <div className='headerListItem'>
+                 <FontAwesomeIcon icon={faPaperPlane} />
+                  <span>Attractions</span>
+              </div>
         </div>
            
            <div>
