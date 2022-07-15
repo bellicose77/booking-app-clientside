@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
     return (
-        <div>
+        <div className='headerlist'>
            <div>
            <FontAwesomeIcon icon={faBed} />
            <span>Stays</span>
