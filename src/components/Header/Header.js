@@ -31,24 +31,7 @@ const Header = () => {
                   <span>Taxi</span>
               </div>
         </div>
-           
-           <div>
-           <FontAwesomeIcon icon={faPlane} />
-           <span>Flights</span>
-           </div>
-           <div>
-           <FontAwesomeIcon icon={faCarSide} />
-           <span>Cars</span>
-           </div>
-           <div>
-           <FontAwesomeIcon icon={faPaperPlane} />
-           <span>Attraction</span>
-           </div>
-           <div>
-           <FontAwesomeIcon icon={faTaxi} />
-           <span>Taxi</span>
-           </div>
-        </div>
+    </div>
     );
 };
 
