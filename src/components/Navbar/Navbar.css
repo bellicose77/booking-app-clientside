@@ -4,3 +4,7 @@
     display: flex;
     justify-content: center;
 }
+.navbar-container{
+    width:100%;
+    max-width:1024px;
+}
