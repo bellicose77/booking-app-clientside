@@ -1,4 +1,4 @@
-.headerList{
-    display: flex;
+.header{
+    display:flex;
     justify-content: center;
 }
