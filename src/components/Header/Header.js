@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    faBed, faCarSide, faPaperPlane, faPlane,
+    faBed, faCarSide, faPaperPlane, faPlane, faTaxi,
   
   } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,6 +23,10 @@ const Header = () => {
            <div>
            <FontAwesomeIcon icon={faPaperPlane} />
            <span>Attraction</span>
+           </div>
+           <div>
+           <FontAwesomeIcon icon={faTaxi} />
+           <span>Taxi</span>
            </div>
         </div>
     );
