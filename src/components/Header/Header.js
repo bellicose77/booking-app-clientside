@@ -10,7 +10,7 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
-    const []=useState(false)
+    const [openDate,setOpenDate]=useState(false)
     const [date, setDate] = useState([
         {
           startDate: new Date(),
