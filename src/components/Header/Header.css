@@ -27,3 +27,11 @@ gap:40px;
 .headerDesc{
     margin: 20px 0px;
 }
+.headerBtn{
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
