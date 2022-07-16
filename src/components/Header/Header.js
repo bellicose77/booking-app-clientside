@@ -4,10 +4,17 @@ import {
     faBed, faCalendar, faCalendarDays, faCarSide, faPaperPlane, faPerson, faPlane, faTaxi,
   
   } from "@fortawesome/free-solid-svg-icons";
-  import { DateRange } from 'react-date-range';
+import { DateRange } from 'react-date-range';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
+    const [state, setState] = useState([
+        {
+          startDate: new Date(),
+          endDate: null,
+          key: 'selection'
+        }
+      ]);
     return (
     <div className='header'>
         <div className='headerContainer'>
