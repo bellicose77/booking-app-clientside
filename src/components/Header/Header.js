@@ -37,7 +37,7 @@ const Header = () => {
         Get rewarded for your travels – unlock instant savings of 10% or
               more with a free Rahatbooking account
         </p>
-        <button className='headerBtn'>Sign/Register</button>
+        <button className='headerBtn'>Sign / Register</button>
         </div>
        
     </div>
