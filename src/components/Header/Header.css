@@ -54,5 +54,8 @@ gap:40px;
     color: lightgrey;
 }
 .headerSearchItem{
+    display: flex;
+    gap: 10px;
+    align-items: center;
     color: lightgrey;
 }
