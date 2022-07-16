@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import {
     faBed, faCalendar, faCalendarDays, faCarSide, faPaperPlane, faPerson, faPlane, faTaxi,
@@ -8,7 +8,7 @@ import { DateRange } from 'react-date-range';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
-    const [state, setState] = useState([
+    const [date, setDate] = useState([
         {
           startDate: new Date(),
           endDate: null,
