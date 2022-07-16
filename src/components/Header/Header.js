@@ -40,7 +40,7 @@ const Header = () => {
         <button className='headerBtn'>Sign / Register</button>
         <div className='headerSearch'>
             <div className='headerSearchItem'>
-
+            <FontAwesomeIcon icon={faBed} className=''/>
             </div>
         </div>
         </div>
