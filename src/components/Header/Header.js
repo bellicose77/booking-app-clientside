@@ -85,7 +85,9 @@ const Header = () => {
                 <div className='optionsItem'>
                     <span className='optionsText'></span>
                     <div className='optionsCouter' >
-
+                      <button>-</button>
+                      <span>0</span>
+                      <button>+</button>
                     </div>
                 </div>
             </div>
