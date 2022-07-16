@@ -83,7 +83,10 @@ const Header = () => {
             <span className='headerSearchText'>{`${options.adult} adult . ${options.children} children. ${options.room} rooms `}</span>
             <div className='options'>
                 <div className='optionsItem'>
-                    
+                    <span className='optionsText'></span>
+                    <div className='optionsCouter' >
+
+                    </div>
                 </div>
             </div>
             </div>
