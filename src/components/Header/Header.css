@@ -3,6 +3,7 @@
     color: white;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .headerContainer{
     width: 100%;
@@ -45,6 +46,9 @@ gap:40px;
     padding: 10px 0px;
    border-radius: 5px;
    position: absolute;
+   bottom:-25px;
+   width:100%;
+   max-width:1024px;
 }
 .headerIcon{
     color: lightgrey;
