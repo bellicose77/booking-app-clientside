@@ -19,6 +19,7 @@ const Header = () => {
           key: 'selection'
         }
       ]);
+      const[openOption,setOpenOption] = useState(false)
       const [options,setOptions] = useState({
         adult:1,
         children:0,
@@ -88,43 +89,46 @@ const Header = () => {
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faPerson} className='headerIcon'/>
             <span className='headerSearchText'>{`${options.adult} adult . ${options.children} children. ${options.room} rooms `}</span>
-            <div className='options'>
-                <div className='optionsItem'>
-                    <span className='optionsText'>Adult</span>
-                    <div className='optionsCouter' >
-                      <button disabled={options.adult <=1}
-                      className='optionCouterButton'
-                       onClick={()=>handleOption("adult","d")}>-</button>
-                      <span className='optionCouterNumber'>{options.adult}</span>
-                      <button className='optionCouterButton' onClick={()=>handleOption("adult","i")}>+</button>
-                    </div>
-                </div>
-                <div className='optionsItem'>
-                    <span className='optionsText'>children</span>
-                    <div className='optionsCouter' >
-                      <button 
-                       disabled={options.children <=1}
-                      className='optionCouterButton'
-                       onClick={()=>handleOption("children","d")}
-                       >-</button>
-                      <span className='optionCouterNumber'>{options.children}</span>
-                      <button className='optionCouterButton' onClick={()=>handleOption("children","i")}>+</button>
-                    </div>
-                </div>
-                <div className='optionsItem'>
-                    <span className='optionsText'>Room</span>
-                    <div className='optionsCouter' >
-                      <button 
-                      disabled={options.room<=1}
-                      className='optionCouterButton' 
-                      onClick={()=>handleOption("room","d")}
-                      >-
-                      </button>
-                      <span className='optionCouterNumber'>{options.room}</span>
-                      <button className='optionCouterButton' onClick={()=>handleOption("room","i")}>+</button>
-                    </div>
-                </div>
-            </div>
+            {
+              openOption &&  <div className='options'>
+              <div className='optionsItem'>
+                  <span className='optionsText'>Adult</span>
+                  <div className='optionsCouter' >
+                    <button disabled={options.adult <=1}
+                    className='optionCouterButton'
+                     onClick={()=>handleOption("adult","d")}>-</button>
+                    <span className='optionCouterNumber'>{options.adult}</span>
+                    <button className='optionCouterButton' onClick={()=>handleOption("adult","i")}>+</button>
+                  </div>
+              </div>
+              <div className='optionsItem'>
+                  <span className='optionsText'>children</span>
+                  <div className='optionsCouter' >
+                    <button 
+                     disabled={options.children <=1}
+                    className='optionCouterButton'
+                     onClick={()=>handleOption("children","d")}
+                     >-</button>
+                    <span className='optionCouterNumber'>{options.children}</span>
+                    <button className='optionCouterButton' onClick={()=>handleOption("children","i")}>+</button>
+                  </div>
+              </div>
+              <div className='optionsItem'>
+                  <span className='optionsText'>Room</span>
+                  <div className='optionsCouter' >
+                    <button 
+                    disabled={options.room<=1}
+                    className='optionCouterButton' 
+                    onClick={()=>handleOption("room","d")}
+                    >-
+                    </button>
+                    <span className='optionCouterNumber'>{options.room}</span>
+                    <button className='optionCouterButton' onClick={()=>handleOption("room","i")}>+</button>
+                  </div>
+              </div>
+          </div> 
+            }
+            
             </div>
             <div className='headerSearchItem'>
                <button>Search</button>
