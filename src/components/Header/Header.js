@@ -40,7 +40,8 @@ const Header = () => {
         <button className='headerBtn'>Sign / Register</button>
         <div className='headerSearch'>
             <div className='headerSearchItem'>
-            <FontAwesomeIcon icon={faBed} className=''/>
+            <FontAwesomeIcon icon={faBed} className='headerIcon'/>
+            <input type="text" placeholder="where are you going?"/>
             </div>
         </div>
         </div>
