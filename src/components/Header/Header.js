@@ -43,7 +43,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faBed} className='headerIcon'/>
             <input type="text"
              placeholder="where are you going?"
-             className='headerSearchItem'
+             className='headerSearchInput'
              />
             </div>
             <div className='headerSearchItem'>

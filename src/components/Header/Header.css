@@ -50,12 +50,17 @@ gap:40px;
     width:100%;
     max-width:1024px;
 }
-.headerIcon{
-    color: lightgrey;
-}
+
 .headerSearchItem{
     display: flex;
     gap: 10px;
     align-items: center;
+    color: lightgrey;
+}
+.headerSearchInput{
+    border: none;
+    outline: none;
+}
+.headerIcon{
     color: lightgrey;
 }
