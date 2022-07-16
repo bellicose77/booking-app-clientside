@@ -103,3 +103,6 @@ gap:40px;
     cursor: pointer;
     background-color: white;
   }
+  .optionCouterButton:disabled{
+    
+  }
