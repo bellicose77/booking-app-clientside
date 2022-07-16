@@ -83,11 +83,11 @@ const Header = () => {
             <span className='headerSearchText'>{`${options.adult} adult . ${options.children} children. ${options.room} rooms `}</span>
             <div className='options'>
                 <div className='optionsItem'>
-                    <span className='optionsText'></span>
+                    <span className='optionsText'>Adult</span>
                     <div className='optionsCouter' >
-                      <button>-</button>
-                      <span>0</span>
-                      <button>+</button>
+                      <button className='optionCouterButton'>-</button>
+                      <span className='optionCouterNumber'>0</span>
+                      <button className='optionCouterButton'>+</button>
                     </div>
                 </div>
             </div>
