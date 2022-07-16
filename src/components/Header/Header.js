@@ -33,7 +33,10 @@ const Header = () => {
               </div>
         </div>
         <h1 className='headerTitle'>A lifetime of discounts?It's genius.</h1>
-        <p></p>
+        <p className='headerDesc'>
+        Get rewarded for your travels – unlock instant savings of 10% or
+              more with a free Rahatbooking account
+        </p>
         </div>
        
     </div>
