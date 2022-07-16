@@ -32,6 +32,7 @@ const Header = () => {
                   <span>Taxi</span>
               </div>
         </div>
+        <h1>A lifetime of discounts?It's genius.</h1>
         </div>
        
     </div>
