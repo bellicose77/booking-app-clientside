@@ -89,5 +89,6 @@ gap:40px;
     margin:10px;
 }
 .optionsCounter{
-    
+    display: flex;
+    align-item:center;
 }
