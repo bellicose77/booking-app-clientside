@@ -23,7 +23,14 @@ const Header = () => {
         adult:1,
         children:0,
         room:1
-      })
+      });
+      const handleOption = (name,operation)=>{
+        setOptions(prev=>{
+            return {
+                ...prev
+            }
+        })
+      }
     return (
     <div className='header'>
         <div className='headerContainer'>
