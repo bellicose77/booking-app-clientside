@@ -80,7 +80,7 @@ const Header = () => {
             </div>
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faPerson} className='headerIcon'/>
-            <span className='headerSearchText'>2 adults 1 children 1 rooms</span>
+            <span className='headerSearchText'>{`${options.adult} adult . ${options.children}children. ${options.room}rooms `}</span>
             </div>
             <div className='headerSearchItem'>
                <button>Search</button>
