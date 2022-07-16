@@ -32,7 +32,8 @@ const Header = () => {
                   <span>Taxi</span>
               </div>
         </div>
-        <h1>A lifetime of discounts?It's genius.</h1>
+        <h1 className='headerTitle'>A lifetime of discounts?It's genius.</h1>
+        <p></p>
         </div>
        
     </div>
