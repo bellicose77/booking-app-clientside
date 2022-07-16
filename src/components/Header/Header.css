@@ -83,5 +83,8 @@ gap:40px;
     box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
 }
 .optionsItem{
-    width:
+    width:200px;
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
 }
