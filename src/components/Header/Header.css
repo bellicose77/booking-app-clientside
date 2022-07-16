@@ -88,7 +88,18 @@ gap:40px;
     justify-content: space-between;
     margin:10px;
 }
-.optionsCounter{
+.optionsCouter{
     display: flex;
-    align-item:center;
+    align-items:center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
 }
+.optionCouterButton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: white;
+  }
