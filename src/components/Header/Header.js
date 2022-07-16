@@ -19,6 +19,11 @@ const Header = () => {
           key: 'selection'
         }
       ]);
+      const [options,setOptions] = useState({
+        adult:1,
+        children:0,
+        room:1
+      })
     return (
     <div className='header'>
         <div className='headerContainer'>
