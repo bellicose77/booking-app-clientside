@@ -10,6 +10,7 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
+    const []=useState(false)
     const [date, setDate] = useState([
         {
           startDate: new Date(),
@@ -60,11 +61,12 @@ const Header = () => {
             <FontAwesomeIcon icon={faCalendarDays} className='headerIcon'/>
             <span className='headerSearchText'>date to date</span>
             <DateRange
-  editableDateInputs={true}
-  onChange={item => setDate([item.selection])}
-  moveRangeOnFirstSelection={false}
-  ranges={date}
-/>
+                  editableDateInputs={true}
+                  onChange={item => setDate([item.selection])}
+                  moveRangeOnFirstSelection={false}
+                  ranges={date}
+                  className="date"
+                />
             </div>
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faPerson} className='headerIcon'/>
