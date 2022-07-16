@@ -36,5 +36,7 @@ gap:40px;
   cursor: pointer;
 }
 .headerSearch{
-    
+    margin: 40px;
+    background-color: white;
+    display:flex;
 }
