@@ -27,7 +27,7 @@ const Header = () => {
       const handleOption = (name,operation)=>{
         setOptions(prev=>{
             return {
-                ...prev
+                ...prev,[name]:operation==="i" ? options[name]+1 
             }
         })
       }
