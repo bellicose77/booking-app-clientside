@@ -4,6 +4,7 @@ import {
     faBed, faCalendar, faCalendarDays, faCarSide, faPaperPlane, faPerson, faPlane, faTaxi,
   
   } from "@fortawesome/free-solid-svg-icons";
+  import { DateRange } from 'react-date-range';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
@@ -52,7 +53,7 @@ const Header = () => {
             </div>
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faPerson} className='headerIcon'/>
-            <span className='headerSearchItem'>2 adults 1 children 1 rooms</span>
+            <span className='headerSearchText'>2 adults 1 children 1 rooms</span>
             </div>
             <div className='headerSearchItem'>
                <button>Search</button>
