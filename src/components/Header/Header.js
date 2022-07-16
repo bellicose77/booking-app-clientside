@@ -38,6 +38,11 @@ const Header = () => {
               more with a free Rahatbooking account
         </p>
         <button className='headerBtn'>Sign / Register</button>
+        <div className='headerSearch'>
+            <div className='headerSearchItem'>
+
+            </div>
+        </div>
         </div>
        
     </div>
