@@ -90,6 +90,22 @@ const Header = () => {
                       <button className='optionCouterButton'>+</button>
                     </div>
                 </div>
+                <div className='optionsItem'>
+                    <span className='optionsText'>children</span>
+                    <div className='optionsCouter' >
+                      <button className='optionCouterButton'>-</button>
+                      <span className='optionCouterNumber'>0</span>
+                      <button className='optionCouterButton'>+</button>
+                    </div>
+                </div>
+                <div className='optionsItem'>
+                    <span className='optionsText'>Room</span>
+                    <div className='optionsCouter' >
+                      <button className='optionCouterButton'>-</button>
+                      <span className='optionCouterNumber'>0</span>
+                      <button className='optionCouterButton'>+</button>
+                    </div>
+                </div>
             </div>
             </div>
             <div className='headerSearchItem'>
