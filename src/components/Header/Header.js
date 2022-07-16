@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import {
-    faBed, faCarSide, faPaperPlane, faPlane, faTaxi,
+    faBed, faCalendar, faCalendarDays, faCarSide, faPaperPlane, faPlane, faTaxi,
   
   } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -41,7 +41,14 @@ const Header = () => {
         <div className='headerSearch'>
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faBed} className='headerIcon'/>
-            <input type="text" placeholder="where are you going?"/>
+            <input type="text"
+             placeholder="where are you going?"
+             className='headerSearchItem'
+             />
+            </div>
+            <div className='headerSearchItem'>
+            <FontAwesomeIcon icon={faCalendarDays} className='headerIcon'/>
+            <span></span>
             </div>
         </div>
         </div>
