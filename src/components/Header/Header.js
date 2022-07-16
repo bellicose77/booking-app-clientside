@@ -60,7 +60,7 @@ const Header = () => {
             </div>
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faCalendarDays} className='headerIcon'/>
-            <span onClick={()=>setOpenDate(!openDate)} className='headerSearchText'>date to date</span>
+            <span onClick={()=>setOpenDate(!openDate)} className='headerSearchText'>{`${format(date[0].startDate)}`}</span>
             {
                 openDate && 
                 <DateRange
