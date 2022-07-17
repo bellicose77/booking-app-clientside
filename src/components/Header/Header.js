@@ -63,7 +63,9 @@ const Header = ({type}) => {
               more with a free Rahatbooking account
         </p>
         <button className='headerBtn'>Sign / Register</button>
-        <div className='headerSearch'>
+        {
+          <>
+           <div className='headerSearch'>
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faBed} className='headerIcon'/>
             <input type="text"
@@ -134,6 +136,9 @@ const Header = ({type}) => {
                <button>Search</button>
             </div>
         </div>
+          </>
+        }
+       
         </div>
        
     </div>
