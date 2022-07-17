@@ -62,10 +62,13 @@ const Header = ({type}) => {
         Get rewarded for your travels – unlock instant savings of 10% or
               more with a free Rahatbooking account
         </p>
-        <button className='headerBtn'>Sign / Register</button>
         {
           type!=="list" && 
           <>
+        <button className='headerBtn'>Sign / Register</button>
+        
+          
+          
            <div className='headerSearch'>
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faBed} className='headerIcon'/>
