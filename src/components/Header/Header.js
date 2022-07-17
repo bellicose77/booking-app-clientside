@@ -64,6 +64,7 @@ const Header = ({type}) => {
         </p>
         <button className='headerBtn'>Sign / Register</button>
         {
+          type!=="list" && 
           <>
            <div className='headerSearch'>
             <div className='headerSearchItem'>
