@@ -11,7 +11,7 @@ const Home = () => {
            <div className='homeContainer'>
                <Featured/>
                <h1 className='homeTitle'>
-                Browse propertis
+                Browse by propertis type
                </h1>
            </div>
         </div>
