@@ -4,7 +4,9 @@ import './Featured.css';
 const Featured = () => {
     return (
         <div className='featureContainer'>
-            
+            <div className='featureItem'>
+
+            </div>
         </div>
     );
 };
