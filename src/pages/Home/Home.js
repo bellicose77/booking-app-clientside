@@ -10,6 +10,9 @@ const Home = () => {
            <Header/>
            <div className='homeContainer'>
                <Featured/>
+               <h2 className='homeContainTitle'>
+                Browse propertis
+               </h2>
            </div>
         </div>
     );
