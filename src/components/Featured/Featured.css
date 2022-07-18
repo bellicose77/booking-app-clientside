@@ -1,3 +1,4 @@
 .featureContainer{
-    
+    display: flex;
+    width:100%;
 }
