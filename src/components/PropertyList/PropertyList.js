@@ -2,8 +2,8 @@ import React from 'react';
 import './PropertyList.css'
 const PropertyList = () => {
     return (
-        <div className='pListContainer'>
-            
+        <div className='pLcontainer'>
+            <div className='pLitem'>
         </div>
     );
 };
