@@ -14,7 +14,7 @@ const Home = () => {
                <h1 className='homeTitle'>
                 Browse by propertis type
                </h1>
-               
+               <PropertyList/>
            </div>
         </div>
     );
