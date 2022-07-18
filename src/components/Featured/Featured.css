@@ -8,7 +8,9 @@
 }
 .featureItem{
     height: 250px;
+    border-radius: 10px;
     color: white;
+    flex: 1;
 }
 .featureImg{
     width: 100%;
