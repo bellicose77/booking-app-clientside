@@ -10,9 +10,9 @@ const Home = () => {
            <Header/>
            <div className='homeContainer'>
                <Featured/>
-               <h2 className='homeTitle'>
+               <h1 className='homeTitle'>
                 Browse propertis
-               </h2>
+               </h1>
            </div>
         </div>
     );
