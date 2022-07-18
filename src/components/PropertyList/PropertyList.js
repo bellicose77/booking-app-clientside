@@ -4,6 +4,8 @@ const PropertyList = () => {
     return (
         <div className='pLcontainer'>
             <div className='pLitem'>
+                <img src=''/>
+            </div>
         </div>
     );
 };
