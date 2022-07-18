@@ -19,7 +19,7 @@ const Featured = () => {
               />
               <div className='featureText'>
                 <h1>Austin</h1>
-                <h2>123 propertis</h2>
+                <h2>23 propertis</h2>
               </div>
             </div>
             <div className='featureItem'>
@@ -27,8 +27,8 @@ const Featured = () => {
               alt='noting' className='featureImg'
               />
               <div className='featureText'>
-                <h1>Dubli</h1>
-                <h2>123 propertis</h2>
+                <h1>Paris</h1>
+                <h2>103 propertis</h2>
               </div>
             </div>
         </div>
