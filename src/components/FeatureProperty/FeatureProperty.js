@@ -4,7 +4,7 @@ const FeatureProperty = () => {
     return (
         <div className='propertyContainer'>
             <div className='propertyItem'>
-                
+                <img src=''
 
             </div>
             
