@@ -10,5 +10,6 @@
     height: 250px;
 }
 .featureImg{
-    
+    width: 100%;
+    border-radius: 5px;
 }
