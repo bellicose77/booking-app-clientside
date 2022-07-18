@@ -2,7 +2,11 @@ import React from 'react';
 
 const FeatureProperty = () => {
     return (
-        <div>
+        <div className='propertyContainer'>
+            <div className='propertyItem'>
+                
+
+            </div>
             
         </div>
     );
