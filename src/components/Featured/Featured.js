@@ -9,7 +9,7 @@ const Featured = () => {
               alt='noting' className='featureImg'
               />
               <div className='featureText'>
-                <h1>Dubli</h1>
+                <h1>Dublin</h1>
                 <h2>123 propertis</h2>
               </div>
             </div>
