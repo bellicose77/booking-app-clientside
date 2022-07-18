@@ -3,6 +3,7 @@ import Featured from '../../components/Featured/Featured';
 import FeatureProperty from '../../components/FeatureProperty/FeatureProperty';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
+import PropertyList from '../../components/PropertyList/PropertyList';
 import './Home.css';
 const Home = () => {
     return (
