@@ -35,8 +35,8 @@ const PropertyList = () => {
                 src='https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-apartments_300/9f60235dc09a3ac3f0a93adbc901c61ecd1ce72e.jpg'
                 />
                 <div className='pLtitle'>
-                   <h1>Vilas</h1>
-                   <h2>87042 Vilas</h2>
+                   <h1>Resort</h1>
+                   <h2>87042 Resorts</h2>
                 </div>
             </div>
             <div className='pLitem'>
