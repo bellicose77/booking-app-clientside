@@ -1,0 +1,7 @@
+.fp{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1024px;
+    gap:10px;
+}
