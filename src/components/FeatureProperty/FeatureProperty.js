@@ -9,6 +9,10 @@ const FeatureProperty = () => {
                 <span className="fpName">Aparthotel Stare Miasto</span>
                 <span className="fpCity">Mardid</span>
                 <span className="fpPrice">Starting from $120</span>
+                <div className='fpRating'>
+                    <button></button>
+                    <span></span>
+                </div>
 
             </div>
             
