@@ -4,7 +4,9 @@ import './MailList.css'
 const MailList = () => {
     return (
         <div className='mail'>
-            <h1 className='mailTitle'></h1>
+            <h1 className='mailTitle'>
+            Save time, save money!
+            </h1>
             
         </div>
     );
