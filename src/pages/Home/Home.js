@@ -16,6 +16,9 @@ const Home = () => {
                 Browse by propertis type
                </h1>
                <PropertyList/>
+               <h1 className='homeTitle'>
+                Guest to love
+               </h1>
            </div>
         </div>
     );
