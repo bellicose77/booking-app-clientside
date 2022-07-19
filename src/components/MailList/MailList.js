@@ -7,6 +7,7 @@ const MailList = () => {
             <h1 className='mailTitle'>
             Save time, save money!
             </h1>
+            <span>Sign up and we'll send the best deals to you</span>
             
         </div>
     );
