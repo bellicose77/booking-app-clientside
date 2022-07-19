@@ -3,6 +3,8 @@
     background-color: #003580;
     color: white;
     margin-top:50px;
+    
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
