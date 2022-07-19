@@ -17,7 +17,7 @@ const Home = () => {
                </h1>
                <PropertyList/>
                <h1 className='homeTitle'>
-                Guest to love
+               Homes guests love
                </h1>
            </div>
         </div>
