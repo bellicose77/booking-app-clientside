@@ -7,7 +7,7 @@ const MailList = () => {
             <h1 className='mailTitle'>
             Save time, save money!
             </h1>
-            <span>Sign up and we'll send the best deals to you</span>
+            <span className='mailDesc'>Sign up and we'll send the best deals to you</span>
             <div className='mailContainer'>
                 <input type='text' placeholder='Enter mail'/>
                 <button>Subscribe</button>
