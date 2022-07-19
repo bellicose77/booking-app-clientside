@@ -9,6 +9,11 @@
     gap: 10px;
     padding:5px;
 }
-.mailContainer{
-
+.mailContainer>input{
+    width: 300px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5p
 }
