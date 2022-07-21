@@ -9,10 +9,10 @@ const List = () => {
             <Header type="list"/>
             <div className='listContainer'>
               <div className='listWrapper'>
-                <div className='SearchList' >
-                    
+                <div className='searchList' >
+                    <h1 className='searchTitle'></h1>
                 </div>
-                <div className='SearchResult'>
+                <div className='searchResult'>
 
                 </div>
               </div>
