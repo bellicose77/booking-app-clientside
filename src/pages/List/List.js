@@ -18,6 +18,10 @@ const List = () => {
                         <label>Description</label>
                         <input type="text" placeholder="destination"/>
                     </div>
+                    <div className='lsitem'>
+                        <label>Description</label>
+                        <input type="text" placeholder="destination"/>
+                    </div>
                 </div>
                 <div className='searchResult'>
                     <h1>Result</h1>
