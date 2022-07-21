@@ -9,7 +9,7 @@ const List = () => {
             <Header type="list"/>
             <div className='listContainer'>
               <div className='listWrapper'>
-                <div ></div>
+                <div className='SearchList' ></div>
               </div>
             </div>
         </div>
