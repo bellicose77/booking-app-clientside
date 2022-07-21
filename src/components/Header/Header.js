@@ -32,6 +32,9 @@ const Header = ({type}) => {
             }
         })
       }
+      const handleSearch = () =>{
+        
+      }
     return (
     <div className='header'>
         <div className={type==="list" ? "headerContainer mode" : "headerContainer"}>
