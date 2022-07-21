@@ -15,7 +15,8 @@ const List = () => {
                         Search
                     </h1>
                     <div className='lsitem'>
-                        
+                        <label>Description</label>
+                        <input type="text" placeholder="destination"/>
                     </div>
                 </div>
                 <div className='searchResult'>
