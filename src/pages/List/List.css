@@ -20,4 +20,7 @@
     background-color:blue;
     padding: 10px;
     border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    height: max-content;
 }
