@@ -12,8 +12,8 @@ const List = () => {
                 <div className='SearchList' >
                     
                 </div>
-                <div>
-                    
+                <div className='SearchResult'>
+
                 </div>
               </div>
             </div>
