@@ -7,8 +7,8 @@ const List = () => {
         <div>
             <Navbar/>
             <Header type="list"/>
-            <div className='searchContainer'>
-                
+            <div className='listContainer'>
+
             </div>
         </div>
     );
