@@ -12,5 +12,10 @@
 
 }
 .searchList{
+    flex:1;
     background-color: yellow;
+}
+.searchResult{
+    flex:3;
+    background-color:blue;
 }
