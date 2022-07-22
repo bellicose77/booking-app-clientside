@@ -44,7 +44,9 @@ const List = () => {
                         <label>option</label>
                         <div className='lsOption'>
                             <div className='lsOptionItem'>
-                                
+                               <label>
+                                </label> 
+                                <input type="text" />
                             </div>
                         </div>
                     </div>
