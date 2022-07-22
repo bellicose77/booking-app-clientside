@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import { useLocation } from 'react-router-dom';
 import { format } from 'date-fns';
 import { DateRange } from 'react-date-range';
+import SearchItem from '../../components/SearchItem/SearchItem';
 
 const List = () => {
     const location = useLocation();
@@ -78,7 +79,11 @@ const List = () => {
                     </div>
                 </div>
                 <div className='searchResult'>
-                    <h1>Result</h1>
+                   <SearchItem/>
+                   <SearchItem/>
+                   <SearchItem/>
+                   <SearchItem/>
+                   <SearchItem/>
                 </div>
                 
               </div>
