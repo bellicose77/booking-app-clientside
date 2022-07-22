@@ -3,6 +3,7 @@ import './List.css';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import { useLocation } from 'react-router-dom';
+import { format } from 'date-fns';
 
 const List = () => {
     const location = useLocation();
@@ -25,6 +26,7 @@ const List = () => {
                     </div>
                     <div className='lsitem'>
                         <label>Check-in Date</label>
+                        <span>{`${format(date[0].startDate,"dd//MM/yy")} to ${format(date[0].endDate,"dd//MM/yy")}`}</span>
                         
                     </div>
                 </div>
