@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 const List = () => {
     const location = useLocation();
     const [description,setDescription] = useState(location.state.description)
-
+    const [date,setDate] = useState(location.state.date);
     return (
         <div>
             <Navbar/>
