@@ -36,7 +36,7 @@ const Header = ({type}) => {
         })
       }
       const handleSearch = () =>{
-        navigate("../hotels",{state:{description,date,options}});
+        navigate("/hotels",{state:{description,date,options}});
       }
     return (
     <div className='header'>
