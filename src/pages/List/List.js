@@ -42,6 +42,9 @@ const List = () => {
                     </div>
                     <div className='lsitem'>
                         <label>option</label>
+                        <div className='lsoptionItem'>
+                            
+                        </div>
                     </div>
                 </div>
                 <div className='searchResult'>
