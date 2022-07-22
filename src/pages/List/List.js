@@ -28,7 +28,7 @@ const List = () => {
                     </div>
                     <div className='lsitem'>
                         <label>Check-in Date</label>
-                        <span onClick={setOpenDate(!openDate)}>{`${format(date[0].startDate,"dd//MM/yy")}
+                        <span onClick={e=>setOpenDate(!openDate)}>{`${format(date[0].startDate,"dd//MM/yy")}
                          to ${format(date[0].endDate,"dd//MM/yy")}`}</span>
                          {
                             openDate &&  <DateRange
