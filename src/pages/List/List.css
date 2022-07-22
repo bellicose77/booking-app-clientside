@@ -14,15 +14,16 @@
 .searchList{
     flex:1;
     background-color: #febb02;
-}
-.searchResult{
-    flex:3;
-    background-color:blue;
     padding: 10px;
     border-radius: 10px;
     position: sticky;
     top: 10px;
     height: max-content;
+}
+.searchResult{
+    flex:3;
+    background-color:blue;
+    
 }
 .searchTitle{
     font-size: 20px;
