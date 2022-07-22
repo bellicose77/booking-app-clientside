@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {useNavigate } from 'react-router-dom';
 import './Header.css';
 import {
     faBed, faCalendar, faCalendarDays, faCarSide, faPaperPlane, faPerson, faPlane, faTaxi,
@@ -11,7 +12,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { format } from 'date-fns';
 
 const Header = ({type}) => {
-    const [openDate,setOpenDate]=useState(false)
+    const [openDate,setOpenDate]=useState(false);
+    const navigate = useNavigate()
     const [date, setDate] = useState([
         {
           startDate: new Date(),
