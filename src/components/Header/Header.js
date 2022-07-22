@@ -13,7 +13,8 @@ import { format } from 'date-fns';
 
 const Header = ({type}) => {
     const [openDate,setOpenDate]=useState(false);
-    const navigate = useNavigate()
+    const [description,setDescription] = useState('');
+    const navigate = useNavigate();
     const [date, setDate] = useState([
         {
           startDate: new Date(),
@@ -35,7 +36,7 @@ const Header = ({type}) => {
         })
       }
       const handleSearch = () =>{
-        navigate("../hotels");
+        navigate("../hotels",{state:});
       }
     return (
     <div className='header'>
