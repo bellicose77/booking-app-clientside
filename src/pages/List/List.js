@@ -8,6 +8,7 @@ const List = () => {
     const location = useLocation();
     const [description,setDescription] = useState(location.state.description)
     const [date,setDate] = useState(location.state.date);
+    const [options,setOptions] = useState(location.state.options);
     return (
         <div>
             <Navbar/>
