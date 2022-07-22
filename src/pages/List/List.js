@@ -4,12 +4,14 @@ import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import { useLocation } from 'react-router-dom';
 import { format } from 'date-fns';
+import { DateRange } from 'react-date-range';
 
 const List = () => {
     const location = useLocation();
     const [description,setDescription] = useState(location.state.description)
     const [date,setDate] = useState(location.state.date);
     const [options,setOptions] = useState(location.state.options);
+    const [openDate,setOpenDate]=useState(false)
     return (
         <div>
             <Navbar/>
@@ -27,6 +29,11 @@ const List = () => {
                     <div className='lsitem'>
                         <label>Check-in Date</label>
                         <span>{`${format(date[0].startDate,"dd//MM/yy")} to ${format(date[0].endDate,"dd//MM/yy")}`}</span>
+                        <DateRange
+                         onChange={(item) => setDate([item.selection])}
+                         minDate={new Date()}
+                         ranges={date}
+                />
                         
                     </div>
                 </div>
