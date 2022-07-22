@@ -74,13 +74,17 @@ const List = () => {
                                 <input type="number" className="lsOptionInput" />
                             </div>
                         </div>
+                        <button>Search</button>
                     </div>
                 </div>
                 <div className='searchResult'>
                     <h1>Result</h1>
                 </div>
+                
               </div>
+             
             </div>
+          
         </div>
     );
 };
