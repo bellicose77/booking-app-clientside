@@ -30,6 +30,14 @@
 .lsitem>label{
     font-size: 12px;
 }
+.lsitem>input{
+    height: 30px;
+    border: none;
+    padding: 5px;
+}
+.lsitem>span{
+    
+}
 .searchResult{
     flex:3;
     background-color:blue;
