@@ -24,8 +24,8 @@ const List = () => {
                         <input type="text" placeholder={description}/>
                     </div>
                     <div className='lsitem'>
-                        <label></label>
-                        <input type="text" placeholder="destination"/>
+                        <label>Check-in Date</label>
+                        
                     </div>
                 </div>
                 <div className='searchResult'>
