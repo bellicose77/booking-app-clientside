@@ -28,12 +28,16 @@ const List = () => {
                     </div>
                     <div className='lsitem'>
                         <label>Check-in Date</label>
-                        <span>{`${format(date[0].startDate,"dd//MM/yy")} to ${format(date[0].endDate,"dd//MM/yy")}`}</span>
-                        <DateRange
-                         onChange={(item) => setDate([item.selection])}
-                         minDate={new Date()}
-                         ranges={date}
-                />
+                        <span onClick={setOpenDate(!openDate)}>{`${format(date[0].startDate,"dd//MM/yy")}
+                         to ${format(date[0].endDate,"dd//MM/yy")}`}</span>
+                         {
+                            openDate &&  <DateRange
+                            onChange={(item) => setDate([item.selection])}
+                            minDate={new Date()}
+                            ranges={date}
+                   />
+                         }
+                       
                         
                     </div>
                 </div>
