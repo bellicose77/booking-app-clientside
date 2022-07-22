@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 
 const List = () => {
     const location = useLocation();
+    const {description,date,options}=location.state
     console.log(location);
     return (
         <div>
@@ -18,7 +19,7 @@ const List = () => {
                         Search
                     </h1>
                     <div className='lsitem'>
-                        <label>Description</label>
+                        <label>{}</label>
                         <input type="text" placeholder="destination"/>
                     </div>
                     <div className='lsitem'>
