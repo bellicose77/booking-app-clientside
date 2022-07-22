@@ -45,6 +45,7 @@ const List = () => {
                         <div className='lsOption'>
                             <div className='lsOptionItem'>
                                <label>
+                               Min price <small>per night</small>
                                 </label> 
                                 <input type="text" />
                             </div>
