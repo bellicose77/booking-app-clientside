@@ -67,6 +67,12 @@ const List = () => {
                                 </label> 
                                 <input type="number" className="lsOptionInput" />
                             </div>
+                            <div className='lsOptionItem'>
+                               <label>
+                               <span className="lsOptionText">Room</span>
+                                </label> 
+                                <input type="number" className="lsOptionInput" />
+                            </div>
                         </div>
                     </div>
                 </div>
