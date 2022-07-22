@@ -42,8 +42,10 @@ const List = () => {
                     </div>
                     <div className='lsitem'>
                         <label>option</label>
-                        <div className='lsoptionItem'>
-                            
+                        <div className='lsOption'>
+                            <div className='lsOptionItem'>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
