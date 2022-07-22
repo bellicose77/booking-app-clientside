@@ -18,7 +18,7 @@ const List = () => {
             <Header type="list"/>
             <div className='listContainer'>
               <div className='listWrapper'>
-                <div className='searchList' >
+                <  div className='searchList' >
                     <h1 className='searchTitle'>
                         Search
                     </h1>
@@ -74,7 +74,7 @@ const List = () => {
                                 <input type="number" className="lsOptionInput" />
                             </div>
                         </div>
-                        <button>Search</button>
+                    <button className='buttonS'>Search</button>
                     </div>
                 </div>
                 <div className='searchResult'>
