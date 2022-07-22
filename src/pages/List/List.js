@@ -41,7 +41,7 @@ const List = () => {
                         
                     </div>
                     <div className='lsitem'>
-                        
+                        <label>option</label>
                     </div>
                 </div>
                 <div className='searchResult'>
