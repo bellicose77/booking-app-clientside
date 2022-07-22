@@ -40,6 +40,9 @@ const List = () => {
                        
                         
                     </div>
+                    <div className='lsitem'>
+                        
+                    </div>
                 </div>
                 <div className='searchResult'>
                     <h1>Result</h1>
