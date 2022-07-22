@@ -20,7 +20,7 @@ const List = () => {
                     </h1>
                     <div className='lsitem'>
                         <label>{}</label>
-                        <input type="text" placeholder="destination"/>
+                        <input type="text" placeholder={description}/>
                     </div>
                     <div className='lsitem'>
                         <label>Description</label>
