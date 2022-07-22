@@ -50,6 +50,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    color: #555;
+  font-size: 12px;
+}
+.lsOptionInput{
+    width: 50px;
 }
 .searchResult{
     flex:3;
