@@ -43,6 +43,9 @@
     background-color: white;
     cursor: pointer;
 }
+.lsOption{
+
+}
 .searchResult{
     flex:3;
     background-color:blue;
