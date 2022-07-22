@@ -21,7 +21,11 @@
     height: max-content;
 }
 .lsitem{
-    
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    margin-bottom:10px;
+
 }
 .searchResult{
     flex:3;
