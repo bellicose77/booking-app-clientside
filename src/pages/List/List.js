@@ -5,7 +5,8 @@ import Navbar from '../../components/Navbar/Navbar';
 import { useLocation } from 'react-router-dom';
 
 const List = () => {
-    const location = useLocation()
+    const location = useLocation();
+    console.log(location);
     return (
         <div>
             <Navbar/>
