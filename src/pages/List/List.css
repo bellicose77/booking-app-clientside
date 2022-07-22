@@ -20,6 +20,9 @@
     top: 10px;
     height: max-content;
 }
+.lsitem{
+    
+}
 .searchResult{
     flex:3;
     background-color:blue;
