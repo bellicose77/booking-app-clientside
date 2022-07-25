@@ -19,3 +19,7 @@
     gap:10px;
     flex:2;
 }
+.siTitle {
+    font-size: 20px;
+    color: #0071c2;
+  }
