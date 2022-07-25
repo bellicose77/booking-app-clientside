@@ -22,7 +22,10 @@ const SearchItem = () => {
         </span>
             </div>
             <div className='siDetails'>
-               <p>Details</p>
+            <div className="siRating">
+          <span>Excellent</span>
+          <button>8.9</button>
+        </div>
             </div>
         </div>
     );
