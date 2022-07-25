@@ -1,6 +1,8 @@
 .searchItem{
-    border: 1px solid gray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
     display:flex;
+    justify-content: space-between;
     gap: 10px;
 
 }
