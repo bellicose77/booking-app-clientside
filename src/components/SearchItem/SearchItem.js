@@ -22,7 +22,7 @@ const SearchItem = () => {
         </span>
             </div>
             <div className='siDetails'>
-
+               <p>Details</p>
             </div>
         </div>
     );
