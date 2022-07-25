@@ -1,4 +1,5 @@
 .searchItem{
+    border: 1px solid gray;
     display:flex;
     gap: 10px;
 
