@@ -2,7 +2,7 @@ import React from 'react';
 import './SearchItem.css';
 const SearchItem = () => {
     return (
-        <div className=''>
+        <div className="searchItem">
             
         </div>
     );
