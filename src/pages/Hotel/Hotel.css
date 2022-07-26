@@ -41,3 +41,6 @@
     object-fit: cover;
     cursor: pointer;
   }
+  .hotelDetails{
+    display: flex;
+  }
