@@ -1,9 +1,10 @@
 import React from 'react';
+import Navbar from '../../components/Navbar/Navbar';
 
 const Hotel = () => {
     return (
         <div>
-            <h2>Hotels</h2>
+           <Navbar/>
         </div>
     );
 };
