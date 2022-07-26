@@ -1,3 +1,4 @@
 .hotelContainer{
-    
+    display: flex;
+    flex-direction: column;
 }
