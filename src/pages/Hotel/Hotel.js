@@ -1,3 +1,4 @@
+import { FontAwesomeIcon,faLocationDot } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
@@ -11,7 +12,7 @@ const Hotel = () => {
             <div className='hotelWrapper'>
                 <h1 className="hotelTitle">Tower Street Apartments</h1>
                 <div className='hotelAddress'>
-
+                    <FontAwesomeIcon icon={faLocationDot}/>
                 </div>
             </div>
            </div>
