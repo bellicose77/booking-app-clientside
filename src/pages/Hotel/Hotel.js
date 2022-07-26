@@ -9,7 +9,8 @@ import React from 'react';
 import './Hotel.css';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
-
+import MailList  from '../../components/MailList/MailList';
+import Footer from '../../components/Footer/Footer';
 const Hotel = () => {
     const photos = [
         {
@@ -90,6 +91,8 @@ const Hotel = () => {
 
                   </div>
             </div>
+            <MailList/>
+            <Footer/>
         </div>
     </div>
     );
