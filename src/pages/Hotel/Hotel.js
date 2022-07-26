@@ -49,7 +49,9 @@ const Hotel = () => {
           </span>
           <div className="hotelImages">
             {
-                photos.map()
+                photos.map(photo=>( 
+                    <div></div>
+                ))
             }
           </div>
             </div>
