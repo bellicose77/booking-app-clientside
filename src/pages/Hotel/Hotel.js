@@ -7,6 +7,9 @@ const Hotel = () => {
         <div>
            <Navbar/>
            <Header type="list"/>
+           <div className='hotelContainer'>
+            
+           </div>
         </div>
     );
 };
