@@ -19,6 +19,7 @@ const Hotel = () => {
                 <h1 className="hotelTitle">Tower Street Apartments</h1>
                 <div className='hotelAddress'>
                     <FontAwesomeIcon icon={faLocationDot}/>
+                    <span>Elton St 125 New york</span>
                 </div>
             </div>
            </div>
