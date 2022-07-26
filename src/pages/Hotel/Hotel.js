@@ -27,6 +27,9 @@ const Hotel = () => {
           <span className="hotelPriceHighlight">
             Book a stay over $114 at this property and get a free airport taxi
           </span>
+          <div className="hotelImages">
+            
+          </div>
             </div>
            </div>
         </div>
