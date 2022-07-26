@@ -1,4 +1,10 @@
-import { FontAwesomeIcon,faLocationDot } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faCircleArrowLeft,
+    faCircleArrowRight,
+    faCircleXmark,
+    faLocationDot,
+  } from "@fortawesome/free-solid-svg-icons";
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
