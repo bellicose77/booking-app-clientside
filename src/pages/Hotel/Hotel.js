@@ -34,7 +34,7 @@ const Hotel = () => {
         <div>
            <Navbar/>
            <Header type="list"/>
-           <div className='hotelContainer'>
+         <div className='hotelContainer'>
             <div className='hotelWrapper'>
                 <h1 className="hotelTitle">Tower Street Apartments</h1>
                 <div className='hotelAddress'>
@@ -42,30 +42,28 @@ const Hotel = () => {
                     <span>Elton St 125 New york</span>
                 </div>
                 <span className="hotelDistance">
-            Excellent location – 500m from center
-          </span>
-          <span className="hotelPriceHighlight">
-            Book a stay over $114 at this property and get a free airport taxi
-          </span>
-          <div className="hotelImages">
-            {
-                photos.map(photo=>( 
+                Excellent location – 500m from center
+                </span>
+               <span className="hotelPriceHighlight">
+                   Book a stay over $114 at this property and get a free airport taxi
+                </span>
+                    <div className="hotelImages">
+                      {
+                          photos.map(photo=>( 
                     <div className="hotelImgWrapper" >
                         <img src={photo.src}/>
                     </div>
                 ))
             }
           </div>
-          <div className="hotelDetails">
+                <div className="hotelDetails">
+                   <div className='hotelDetailsTexts'></div>
+                 
 
-          </div>
-          <div className='hotelDetailsPrice'>
-            
+                  </div>
             </div>
-
-            </div>
-           </div>
         </div>
+    </div>
     );
 };
 
