@@ -8,7 +8,9 @@ const Hotel = () => {
            <Navbar/>
            <Header type="list"/>
            <div className='hotelContainer'>
-            
+            <div className='hotelWrapper'>
+                
+            </div>
            </div>
         </div>
     );
