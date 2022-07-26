@@ -9,7 +9,7 @@ const Hotel = () => {
            <Header type="list"/>
            <div className='hotelContainer'>
             <div className='hotelWrapper'>
-                
+            <h1 className="hotelTitle">Tower Street Apartments</h1>
             </div>
            </div>
         </div>
