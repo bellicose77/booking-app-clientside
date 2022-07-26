@@ -56,9 +56,12 @@ const Hotel = () => {
                 ))
             }
           </div>
-          <div className='"hotelDetails"'>
+          <div className="hotelDetails">
 
           </div>
+          <div className='hotelDetailsPrice'>
+            
+            </div>
 
             </div>
            </div>
