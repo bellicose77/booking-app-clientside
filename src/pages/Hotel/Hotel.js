@@ -6,6 +6,7 @@ import {
     faLocationDot,
   } from "@fortawesome/free-solid-svg-icons";
 import React from 'react';
+import './Hotel.css';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 
