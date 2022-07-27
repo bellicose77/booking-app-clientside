@@ -12,6 +12,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import MailList  from '../../components/MailList/MailList';
 import Footer from '../../components/Footer/Footer';
 const Hotel = () => {
+  const[]
     const photos = [
         {
           src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707778.jpg?k=56ba0babbcbbfeb3d3e911728831dcbc390ed2cb16c51d88159f82bf751d04c6&o=&hp=1",
