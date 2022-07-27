@@ -5,14 +5,14 @@ import {
     faCircleXmark,
     faLocationDot,
   } from "@fortawesome/free-solid-svg-icons";
-import React from 'react';
+import React, { useState } from 'react';
 import './Hotel.css';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import MailList  from '../../components/MailList/MailList';
 import Footer from '../../components/Footer/Footer';
 const Hotel = () => {
-  const[]
+  const[slideindex,setSlideindex] = useState()
     const photos = [
         {
           src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707778.jpg?k=56ba0babbcbbfeb3d3e911728831dcbc390ed2cb16c51d88159f82bf751d04c6&o=&hp=1",
