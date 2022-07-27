@@ -28,6 +28,7 @@ const Hotel = () => {
     else {
       slideNumber = slideindex === 0?5:slideindex-1;
     }
+    setSlideindex(slideNumber);
   }
     const photos = [
         {
