@@ -95,4 +95,7 @@
     cursor: pointer;
     border-radius: 5px;
   }
+  .sliderContainer{
+    position: sticky;
+  }
   
