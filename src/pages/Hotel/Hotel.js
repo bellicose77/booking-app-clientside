@@ -46,7 +46,8 @@ const Hotel = () => {
            <Header type="list"/>
          <div className='hotelContainer'>
           {
-            openSlide && <div className='sliderContainer'>slider
+            openSlide && <div className='sliderContainer'>
+              <FontAwesomeIcon icon={faCircleXmark}/>
             </div>
           }
           
