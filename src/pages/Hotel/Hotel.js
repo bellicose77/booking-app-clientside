@@ -17,6 +17,7 @@ const Hotel = () => {
 
   const handleOpen = (i) =>{
           setSlideindex(i);
+          setOpenSlide(true);
           
   }
     const photos = [
