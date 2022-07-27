@@ -57,7 +57,7 @@ const Hotel = () => {
                       {
                           photos.map((photo,i)=>( 
                     <div className="hotelImgWrapper" >
-                        <img src={photo.src} onClick={()=>} className='hotelImg'/>
+                        <img src={photo.src} onClick={()=>handleOpen()} className='hotelImg'/>
                     </div>
                 ))
             }
