@@ -51,6 +51,7 @@ const Hotel = () => {
               <FontAwesomeIcon icon={faCircleArrowLeft}/>
               <div className="sliderWrapper">
               <img src={photos[slideindex].src} alt="" className="sliderImg" />
+              <FontAwesomeIcon icon={faCircleArrowRight}/>
             </div>
             </div>
           }
