@@ -49,6 +49,9 @@ const Hotel = () => {
             openSlide && <div className='sliderContainer'>
               <FontAwesomeIcon icon={faCircleXmark}/>
               <FontAwesomeIcon icon={faCircleArrowLeft}/>
+              <div className="sliderWrapper">
+              <img src={photos[slideindex].src} alt="" className="sliderImg" />
+            </div>
             </div>
           }
           
