@@ -21,7 +21,8 @@ const Hotel = () => {
           
   }
   const handelArrow= (directions) =>{
-    
+    let slideNumber;
+    if(directions=='f')
   }
     const photos = [
         {
