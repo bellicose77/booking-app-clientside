@@ -15,8 +15,8 @@ const Hotel = () => {
   const[slideindex,setSlideindex] = useState(0);
   const [openSlide,setOpenSlide] = useState(false);
 
-  const handleOpen = () =>{
-    
+  const handleOpen = (i) =>{
+
   }
     const photos = [
         {
