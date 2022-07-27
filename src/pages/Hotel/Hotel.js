@@ -47,7 +47,7 @@ const Hotel = () => {
          <div className='hotelContainer'>
           {
             openSlide && <div className='sliderContainer'>
-              <FontAwesomeIcon icon={faCircleXmark} onClick={} className='close'/>
+              <FontAwesomeIcon icon={faCircleXmark} onClick={()=>setOpenSlide(true)} className='close'/>
               <FontAwesomeIcon icon={faCircleArrowLeft} className='arrow'/>
               <div className="sliderWrapper">
               <img src={photos[slideindex].src} alt="" className="sliderImg" />
