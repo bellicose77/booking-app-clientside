@@ -22,7 +22,12 @@ const Hotel = () => {
   }
   const handelArrow= (directions) =>{
     let slideNumber;
-    if(directions=='f')
+    if(directions==='f'){
+      slideNumber = slideindex === 5?0:slideindex+1;
+    }
+    else {
+      slideNumber = slideindex === 0?5:slideindex-1;
+    }
   }
     const photos = [
         {
