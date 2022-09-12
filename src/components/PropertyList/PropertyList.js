@@ -1,6 +1,9 @@
 import React from 'react';
+import useFetch from '../../hooks/useFetch';
 import './PropertyList.css'
 const PropertyList = () => {
+    const {data,loading,error} = useFetch("http://localhost:8000/api/hotel/countByType");
+    console.log(data)
     return (
         <div className='pLcontainer'>
             <div className='pLitem'>
