@@ -1,7 +1,9 @@
 import React from 'react';
+import useFetch from '../../hooks/useFetch';
 import './FeatureProperty.css'
 
 const FeatureProperty = () => {
+    const {data,loading,error}=useFetch("")
     return (
         <div className='fp'>
             <div className='fpItem'>
