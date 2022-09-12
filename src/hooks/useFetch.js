@@ -10,12 +10,29 @@ useEffect(()=>{
       setLoading(true)
       try{
         const res = await axios.get(url)
+        setData(res.data)
 
       }catch(err){
-
+          setError(err)
       }
-   }
-},[url])
+      setLoading(false)
+   };
+   fetchData()
+
+},[url]);
+const reFetch = async () => {
+    setLoading(true);
+    try {
+      const res = await axios.get(url);
+      setData(res.data);
+    } catch (err) {
+      setError(err);
+    }
+    setLoading(false);
+  };
+
+  return { data, loading, error, reFetch };
+
 
 }
 export default useFetch;
