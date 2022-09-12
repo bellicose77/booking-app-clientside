@@ -1,7 +1,10 @@
 import React from 'react';
+import useFetch from '../../hooks/useFetch';
 import './Featured.css';
 
 const Featured = () => {
+  const {data,loading,error} = useFetch("http://localhost:8000/api/hotel/countByCity?cities=Madrid,Berlin,London")
+  //console.log(data)
     return (
         <div className='featureContainer'>
             <div className='featureItem'>
