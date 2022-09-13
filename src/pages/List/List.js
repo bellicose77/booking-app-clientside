@@ -54,13 +54,13 @@ const List = () => {
                                <label>
                                Min price <small>per night</small>
                                 </label> 
-                                <input type="number" className="lsOptionInput" />
+                                <input type="number" onChange={(e)=>setMin(e.target.value)} className="lsOptionInput" />
                             </div>
                             <div className='lsOptionItem'>
                                <label>
                                Max price <small>per night</small>
                                 </label> 
-                                <input type="number" className="lsOptionInput" />
+                                <input type="number" onChange={(e)=>setMax(e.target.value)} className="lsOptionInput" />
                             </div>
                             <div className='lsOptionItem'>
                                <label>
