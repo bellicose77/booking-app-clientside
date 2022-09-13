@@ -10,6 +10,7 @@ import useFetch from '../../hooks/useFetch';
 
 const List = () => {
     const location = useLocation();
+    const [destination,setDestination]=useState(location.state.destination);
     const [description,setDescription] = useState(location.state.description)
     const [date,setDate] = useState(location.state.date);
     const [options,setOptions] = useState(location.state.options);
@@ -81,7 +82,18 @@ const List = () => {
                     </div>
                 </div>
                 <div className='searchResult'>
-                   <SearchItem/>
+                    {
+                        loading ? ("loading"): (
+                        <>
+                        {
+                            data.map((item)=>(
+                                <SearchItem item={item} key={item._id}/>
+                            ))
+                        }
+                        </>
+                        )
+                    }
+                 
                 </div>
                 
               </div>
