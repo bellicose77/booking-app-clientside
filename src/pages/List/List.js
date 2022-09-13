@@ -15,6 +15,8 @@ const List = () => {
     const [date,setDate] = useState(location.state.date);
     const [options,setOptions] = useState(location.state.options);
     const [openDate,setOpenDate]=useState(false);
+    const [min,setMin]=useState(undefined);
+    const[max,setMax] = useState(undefined)
     const {data,loading,error,reFetch} =useFetch(`http://localhost:8000/api/hotel?city=${description}`) 
     console.log(data);
     return (
