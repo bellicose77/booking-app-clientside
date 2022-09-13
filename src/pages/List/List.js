@@ -12,7 +12,7 @@ const List = () => {
     const [description,setDescription] = useState(location.state.description)
     const [date,setDate] = useState(location.state.date);
     const [options,setOptions] = useState(location.state.options);
-    const [openDate,setOpenDate]=useState(false)
+    const [openDate,setOpenDate]=useState(false);
     return (
         <div>
             <Navbar/>
