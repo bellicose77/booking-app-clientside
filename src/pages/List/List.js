@@ -10,12 +10,13 @@ import useFetch from '../../hooks/useFetch';
 
 const List = () => {
     const location = useLocation();
-    const [destination,setDestination]=useState(location.state.destination);
+    
     const [description,setDescription] = useState(location.state.description)
     const [date,setDate] = useState(location.state.date);
     const [options,setOptions] = useState(location.state.options);
     const [openDate,setOpenDate]=useState(false);
-    const {data,loading,error,reFetch} =useFetch(`http://localhost:8000/api/hotel?city=${destination}`) 
+    const {data,loading,error,reFetch} =useFetch(`http://localhost:8000/api/hotel?city=${description}`) 
+    console.log(data);
     return (
         <div>
             <Navbar/>
