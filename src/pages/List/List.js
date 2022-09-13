@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 import { format } from 'date-fns';
 import { DateRange } from 'react-date-range';
 import SearchItem from '../../components/SearchItem/SearchItem';
+import useFetch from '../../hooks/useFetch';
 
 const List = () => {
     const location = useLocation();
@@ -13,6 +14,7 @@ const List = () => {
     const [date,setDate] = useState(location.state.date);
     const [options,setOptions] = useState(location.state.options);
     const [openDate,setOpenDate]=useState(false);
+    const {data,loading,error} =useFetch() 
     return (
         <div>
             <Navbar/>
