@@ -14,7 +14,7 @@ const List = () => {
     const [date,setDate] = useState(location.state.date);
     const [options,setOptions] = useState(location.state.options);
     const [openDate,setOpenDate]=useState(false);
-    const {data,loading,error} =useFetch(`http://localhost:8000/api/hotel?city=${destination}`) 
+    const {data,loading,error,reFetch} =useFetch(`http://localhost:8000/api/hotel?city=${destination}`) 
     return (
         <div>
             <Navbar/>
@@ -81,10 +81,6 @@ const List = () => {
                     </div>
                 </div>
                 <div className='searchResult'>
-                   <SearchItem/>
-                   <SearchItem/>
-                   <SearchItem/>
-                   <SearchItem/>
                    <SearchItem/>
                 </div>
                 
