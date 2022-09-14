@@ -12,11 +12,14 @@ import Navbar from '../../components/Navbar/Navbar';
 import MailList  from '../../components/MailList/MailList';
 import Footer from '../../components/Footer/Footer';
 import { useLocation } from 'react-router-dom';
+import useFetch from '../../hooks/useFetch';
 const Hotel = () => {
   const location = useLocation();
   const id = location.pathname.split('/')[2];
   const[slideindex,setSlideindex] = useState(0);
   const [openSlide,setOpenSlide] = useState(false);
+
+  const {data,loading,error} = useFetch()
 
   const handleOpen = (i) =>{
           setSlideindex(i);
