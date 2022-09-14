@@ -19,7 +19,8 @@ const Hotel = () => {
   const[slideindex,setSlideindex] = useState(0);
   const [openSlide,setOpenSlide] = useState(false);
 
-  const {data,loading,error} = useFetch()
+  const {data,loading,error} = useFetch(`http://localhost:8000/api/hotel/find/${id}`);
+  console.log(data)
 
   const handleOpen = (i) =>{
           setSlideindex(i);
