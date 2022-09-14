@@ -17,8 +17,11 @@ const List = () => {
     const [openDate,setOpenDate]=useState(false);
     const [min,setMin]=useState(undefined);
     const[max,setMax] = useState(undefined)
-    const {data,loading,error,reFetch} =useFetch(`http://localhost:8000/api/hotel?city=${description}`) 
-    console.log(data);
+    const {data,loading,error,reFetch} =useFetch(`http://localhost:8000/api/hotel?city=${description}&min=${min || 0}&max=${max || 999}`) 
+    //console.log(data);
+    const handleClick =()=>{
+        reFetch()
+    }
     return (
         <div>
             <Navbar/>
@@ -81,7 +84,7 @@ const List = () => {
                                 <input min={1} type="number" className="lsOptionInput" placeholder={options.room} />
                             </div>
                         </div>
-                    <button className='buttonS'>Search</button>
+                    <button onClick={handleClick} className='buttonS'>Search</button>
                     </div>
                 </div>
                 <div className='searchResult'>
