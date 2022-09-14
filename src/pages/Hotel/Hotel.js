@@ -49,7 +49,7 @@ const Hotel = () => {
               <FontAwesomeIcon icon={faCircleXmark} onClick={()=>setOpenSlide(false)} className='close'/>
               <FontAwesomeIcon icon={faCircleArrowLeft} onClick={()=>handelArrow('f')} className='arrow'/>
               <div className="sliderWrapper">
-              <img src={photos[slideindex].src} alt="" className="sliderImg" />
+              <img src={data.photos[slideindex]} alt="" className="sliderImg" />
               <FontAwesomeIcon icon={faCircleArrowRight} onClick={()=>handelArrow('B')} className='arrow'/>
             </div>
             </div>
@@ -70,28 +70,19 @@ const Hotel = () => {
                 </span>
                     <div className="hotelImages">
                       {
-                          photos.map((photo,i)=>( 
+                          data.photos?.map((photo,i)=>( 
                     <div className="hotelImgWrapper" >
-                        <img src={photo.src} onClick={()=>handleOpen(i)} className='hotelImg'/>
+                        <img src={photo} 
+                        onClick={()=>handleOpen(i)} className='hotelImg'/>
                     </div>
                 ))
             }
           </div>
                 <div className="hotelDetails">
                    <div className='hotelDetailsTexts'>
-                   <h1 className="hotelTitle">Stay in the heart of City</h1>
+                   <h1 className="hotelTitle">{data.name}</h1>
               <p className="hotelDesc">
-                Located a 5-minute walk from St. Florian's Gate in Krakow, Tower
-                Street Apartments has accommodations with air conditioning and
-                free WiFi. The units come with hardwood floors and feature a
-                fully equipped kitchenette with a microwave, a flat-screen TV,
-                and a private bathroom with shower and a hairdryer. A fridge is
-                also offered, as well as an electric tea pot and a coffee
-                machine. Popular points of interest near the apartment include
-                Cloth Hall, Main Market Square and Town Hall Tower. The nearest
-                airport is John Paul II International Kraków–Balice, 16.1 km
-                from Tower Street Apartments, and the property offers a paid
-                airport shuttle service.
+               {data.description}
               </p>
                    </div>
                    <div className="hotelDetailsPrice">
