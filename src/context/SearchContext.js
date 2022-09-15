@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useReducer } from "react";
 
 const INITIAL_STATE = {
     city: undefined,
@@ -16,7 +16,7 @@ export const SearchContext = createContext(INITIAL_STATE);
 
 // reducer function 
 
-const ReducerContext = (state,action) =>{
+const SearchReducer = (state,action) =>{
     switch (action.type) {
         case "NEW_SEARCH":
           return action.payload;
@@ -25,5 +25,11 @@ const ReducerContext = (state,action) =>{
         default:
           return state;
       }
+
+};
+
+// Context provider 
+export const SearchContextProvider = ({children}) =>{
+    const [state,dispatch] = useReducer(SearchReducer,INITIAL_STATE);
 
 }
