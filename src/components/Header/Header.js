@@ -89,14 +89,14 @@ const Header = ({type}) => {
             </div>
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faCalendarDays} className='headerIcon'/>
-            <span onClick={()=>setOpenDate(!openDate)} className='headerSearchText'>{`${format(date[0].startDate,"dd//MM/yy")} to ${format(date[0].endDate,"dd//MM/yy")}`}</span>
+            <span onClick={()=>setOpenDate(!openDate)} className='headerSearchText'>{`${format(dates[0].startDate,"dd//MM/yy")} to ${format(dates[0].endDate,"dd//MM/yy")}`}</span>
             {
                 openDate && 
                 <DateRange
                   editableDateInputs={true}
-                  onChange={item => setDate([item.selection])}
+                  onChange={item => setDates([item.selection])}
                   moveRangeOnFirstSelection={false}
-                  ranges={date}
+                  ranges={dates}
                   className="date"
                 />
             }
