@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {useNavigate } from 'react-router-dom';
 import './Header.css';
 import {
@@ -10,12 +10,13 @@ import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { format } from 'date-fns';
+import { SearchContext } from '../../context/SearchContext';
 
 const Header = ({type}) => {
     const [openDate,setOpenDate]=useState(false);
     const [description,setDescription] = useState('');
     const navigate = useNavigate();
-    const [date, setDate] = useState([
+    const [dates, setDates] = useState([
         {
           startDate: new Date(),
           endDate: new Date(),
@@ -34,9 +35,11 @@ const Header = ({type}) => {
                 ...prev,[name]:operation==="i" ? options[name]+1: options[name]-1 
             }
         })
-      }
+      };
+      const{dispatch} = useContext(SearchContext);
       const handleSearch = () =>{
-        navigate("/hotels",{state:{description,date,options}});
+        dispatch({type: "NEW_SEARCH", payload: { description, dates, options }})
+        navigate("/hotels",{state:{description,dates,options}});
       }
     return (
     <div className='header'>
