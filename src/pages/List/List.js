@@ -12,7 +12,7 @@ const List = () => {
     const location = useLocation();
     
     const [description,setDescription] = useState(location.state.description)
-    const [dates,setDates] = useState(location.state.date);
+    const [dates,setDates] = useState(location.state.dates);
     const [options,setOptions] = useState(location.state.options);
     const [openDate,setOpenDate]=useState(false);
     const [min,setMin]=useState(undefined);

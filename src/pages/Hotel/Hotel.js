@@ -5,7 +5,7 @@ import {
     faCircleXmark,
     faLocationDot,
   } from "@fortawesome/free-solid-svg-icons";
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Hotel.css';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
@@ -13,6 +13,7 @@ import MailList  from '../../components/MailList/MailList';
 import Footer from '../../components/Footer/Footer';
 import { useLocation } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
+import { SearchContext } from '../../context/SearchContext';
 const Hotel = () => {
   const location = useLocation();
   const id = location.pathname.split('/')[2];
@@ -20,7 +21,10 @@ const Hotel = () => {
   const [openSlide,setOpenSlide] = useState(false);
 
   const {data,loading,error} = useFetch(`http://localhost:8000/api/hotel/find/${id}`);
-  console.log(data)
+
+  const {dates} = useContext(SearchContext);
+  console.log(dates);
+  //console.log(data)
 
   const handleOpen = (i) =>{
           setSlideindex(i);
