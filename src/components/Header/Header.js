@@ -30,7 +30,7 @@ const Header = ({type}) => {
         children:0,
         room:1
       });
-      const {user} = AuthContext()
+      const {user} = useContext(AuthContext)
       const handleOption = (name,operation)=>{
         setOptions(prev=>{
             return {
