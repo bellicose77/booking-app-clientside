@@ -11,6 +11,7 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { format } from 'date-fns';
 import { SearchContext } from '../../context/SearchContext';
+import { AuthContext } from '../../context/AuthContext';
 
 const Header = ({type}) => {
     const [openDate,setOpenDate]=useState(false);
@@ -29,6 +30,7 @@ const Header = ({type}) => {
         children:0,
         room:1
       });
+      const {user} = AuthContext()
       const handleOption = (name,operation)=>{
         setOptions(prev=>{
             return {
@@ -74,7 +76,8 @@ const Header = ({type}) => {
         {
           type!=="list" && 
           <>
-        <button className='headerBtn'>Sign / Register</button>
+          {!user && <button className='headerBtn'>Sign / Register</button>
+        }
         
           
           

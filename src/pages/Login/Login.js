@@ -6,11 +6,11 @@ import './Login.css'
 
 const Login = () => {
     const [credentials,setCredentials] = useState({
-        username:undefined,
-        password:undefined
+        username:'',
+        password:''
     });
     const navigate = useNavigate()
-    const {loading,error,dispatch} = useContext(AuthContext);
+    const {user,loading,error,dispatch} = useContext(AuthContext);
     const handleChange = (e) =>{
         setCredentials((pre)=>({...pre,[e.target.name]:e.target.value}))
 
@@ -20,12 +20,13 @@ const Login = () => {
            dispatch({type:"LOGIN_START"});
            try{
             const res = await axios.post("http://localhost:8000/api/auth/login",credentials);
-            dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
+            dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
             navigate("/");
            }catch(err){
             dispatch({ type: "LOGIN_FAILURE", payload: err.response.data });
            }
     };
+    console.log(user)
     return (
         <div className="login">
         <div className="lContainer">
