@@ -53,7 +53,12 @@ const Hotel = () => {
     setSlideindex(slideNumber);
   };
   const handleClick = ()=>{
+        if(user){
 
+        }
+        else{
+          navigate("/login");
+        }
   }
     return (
         <div>
