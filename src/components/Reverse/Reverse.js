@@ -10,8 +10,9 @@ const Reverse = ({setOpenSlide,hotelId}) => {
                icon={faCircleXmark}
                className='rClose'
                onClick={()=>setOpenSlide(false)}/>
+               <span>Select your rooms:</span>
             </div>
-            <h2>Reverse</h2>
+
         </div>
     );
 };
