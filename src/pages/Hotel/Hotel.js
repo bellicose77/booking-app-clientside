@@ -129,6 +129,7 @@ const Hotel = () => {
             <Footer/>
            </div>
            )}
+           {openModal && }
     </div>
     );
 };
