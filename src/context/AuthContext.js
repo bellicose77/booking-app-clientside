@@ -16,7 +16,9 @@ const AuthReducer = (state,action) =>{
     switch (action.type) {
         case "LOGIN_START":
           return {
-            
+            user: null,
+            loading: true,
+            error: null,
           };
         case "RESET_SEARCH":
           return INITIAL_STATE;
