@@ -8,6 +8,10 @@ const Login = () => {
         password:undefined
     })
     const {loading,error,dispatch} = useContext(AuthContext);
+    const handleChange = (e) =>{
+        setCredentials((pre)=>({...pre,[e.target.name]:e.target.value}))
+
+    }
     return (
         <div className="login">
         <div className="lContainer">
