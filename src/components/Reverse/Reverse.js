@@ -10,8 +10,12 @@ const Reverse = ({setOpenSlide,hotelId}) => {
     const handleSelect = (e) =>{
         const checked = e.target.checked;
         const value = e.target.value;
+        setSelectedRooms( 
+            checked ? [...selectedRooms,value]:selectedRooms.filter((item) => item !== value)
+            )
 
     }
+    console.log(selectedRooms)
     return (
         <div className='reverse'>
             <div className='rContainer'>
