@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Login.css'
 
 const Login = () => {
+    const [credentials,setCredentials] = useState({
+        username:undefined,
+        password:undefined
+    })
     return (
         <div className="login">
         <div className="lContainer">
