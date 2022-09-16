@@ -16,6 +16,7 @@ import useFetch from '../../hooks/useFetch';
 import { SearchContext } from '../../context/SearchContext';
 import { parseWithOptions } from 'date-fns/fp';
 import { AuthContext } from '../../context/AuthContext';
+import Reverse from '../../components/Reverse/Reverse';
 const Hotel = () => {
   const location = useLocation();
   const id = location.pathname.split('/')[2];
@@ -129,7 +130,7 @@ const Hotel = () => {
             <Footer/>
            </div>
            )}
-           {openModal && }
+           {openModal && <Reverse setOpenSlide={setOpenModal} hotelId={id}/>}
     </div>
     );
 };
