@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { AuthContext } from '../../context/AuthContext';
 import './Login.css'
 
 const Login = () => {
@@ -6,6 +7,7 @@ const Login = () => {
         username:undefined,
         password:undefined
     })
+    const {} = useContext(AuthContext)
     return (
         <div className="login">
         <div className="lContainer">
