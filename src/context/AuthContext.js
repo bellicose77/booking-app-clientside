@@ -45,20 +45,20 @@ const AuthReducer = (state,action) =>{
 };
 
 // Context provider 
-export const SearchContextProvider = ({children}) =>{
-    const [state,dispatch] = useReducer(SearchReducer,INITIAL_STATE);
+export const AuthContextProvider = ({children}) =>{
+    const [state,dispatch] = useReducer(AuthReducer,INITIAL_STATE);
 
     return (
-        <SearchContext.Provider 
+        <AuthContext.Provider 
           value={{
-            city: state.city,
-        dates: state.dates,
-        options: state.options,
-        dispatch,
+            user: state.user,
+            loading: state.loading,
+            error: state.error,
+            dispatch,
           }}
         >
             {children}
-        </SearchContext.Provider>
+        </AuthContext.Provider>
     )
 
 }
