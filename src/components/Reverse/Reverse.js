@@ -6,8 +6,10 @@ import useFetch from '../../hooks/useFetch';
 const Reverse = ({setOpenSlide,hotelId}) => {
     const{data,loading,error} = useFetch(`http://localhost:8000/api/hotel/room/${hotelId}`);
     //console.log(data)
-    const handleSelect = () =>{
-        
+    const handleSelect = (e) =>{
+        const checked = e.target.checked;
+        const value = e.target.value;
+
     }
     return (
         <div className='reverse'>
@@ -22,7 +24,7 @@ const Reverse = ({setOpenSlide,hotelId}) => {
                 <div className="rItem" key={item._id}>
                   <div className='rItemInfo'>
                      <div className="rTitle">{item.title}</div>
-                     <div className="rDesc">{item.desc}</div>
+                     <div className="rDesc">{item.description}</div>
                      <div className="rMax">
                        Max people: <b>{item.maxPeople}</b>
                      </div>
