@@ -1,13 +1,9 @@
 import { createContext, useReducer } from "react";
 
 const INITIAL_STATE = {
-    city: undefined,
-    dates:[],
-    options:{
-        adult: undefined,
-        children: undefined,
-        room: undefined,
-    }
+    user:null,
+    loading:false,
+    error:null
 
 };
 
