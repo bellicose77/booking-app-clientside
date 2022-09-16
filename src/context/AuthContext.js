@@ -8,11 +8,11 @@ const INITIAL_STATE = {
 };
 
 // context creation
-export const SearchContext = createContext(INITIAL_STATE);
+export const AuthContext = createContext(INITIAL_STATE);
 
 // reducer function 
 
-const SearchReducer = (state,action) =>{
+const AuthReducer = (state,action) =>{
     switch (action.type) {
         case "NEW_SEARCH":
           return action.payload;
