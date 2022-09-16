@@ -21,6 +21,7 @@ const Hotel = () => {
   const id = location.pathname.split('/')[2];
   const[slideindex,setSlideindex] = useState(0);
   const [openSlide,setOpenSlide] = useState(false);
+  const [openModal,setOpenModal] = useState(false);
 
   const {data,loading,error} = useFetch(`http://localhost:8000/api/hotel/find/${id}`);
 
@@ -54,7 +55,7 @@ const Hotel = () => {
   };
   const handleClick = ()=>{
         if(user){
-
+          setOpenModal(true)
         }
         else{
           navigate("/login");
