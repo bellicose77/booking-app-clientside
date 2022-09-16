@@ -11,21 +11,30 @@ const Login = () => {
     const handleChange = (e) =>{
         setCredentials((pre)=>({...pre,[e.target.name]:e.target.value}))
 
-    }
+    };
+    const handleClick = (e) =>{
+           e.preventDefault();
+           dispatch({type:"LOGIN_START"});
+           try{
+
+           }catch(err){
+            
+           }
+    };
     return (
         <div className="login">
         <div className="lContainer">
           <input
             type="text"
             placeholder="username"
-            id="username"
+            name="username"
             onChange={handleChange}
             className="lInput"
           />
           <input
             type="password"
             placeholder="password"
-            id="password"
+            name="password"
             onChange={handleChange}
             className="lInput"
           />
