@@ -11,10 +11,11 @@ import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import MailList  from '../../components/MailList/MailList';
 import Footer from '../../components/Footer/Footer';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import { SearchContext } from '../../context/SearchContext';
 import { parseWithOptions } from 'date-fns/fp';
+import { AuthContext } from '../../context/AuthContext';
 const Hotel = () => {
   const location = useLocation();
   const id = location.pathname.split('/')[2];
@@ -24,6 +25,8 @@ const Hotel = () => {
   const {data,loading,error} = useFetch(`http://localhost:8000/api/hotel/find/${id}`);
 
   const {dates,options} = useContext(SearchContext);
+  const {user} = useContext(AuthContext);
+  const navigate = useNavigate();
   const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
   function dayDifference(date1, date2) {
     const timeDiff = Math.abs(date2.getTime() - date1.getTime());
@@ -48,6 +51,9 @@ const Hotel = () => {
       slideNumber = slideindex === 0?5:slideindex-1;
     }
     setSlideindex(slideNumber);
+  };
+  const handleClick = ()=>{
+
   }
     return (
         <div>
@@ -107,7 +113,7 @@ const Hotel = () => {
               <h2>
                 <b>${days * data.chepestPrice * options.room}</b> ({days} nights)
               </h2>
-              <button onClick={}>Reserve or Book Now!</button>
+              <button onClick={handleClick}>Reserve or Book Now!</button>
                    </div>
                  
 
