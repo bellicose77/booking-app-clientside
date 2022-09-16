@@ -7,7 +7,7 @@ const Login = () => {
         username:undefined,
         password:undefined
     })
-    const {} = useContext(AuthContext)
+    const {loading,error,dispatch} = useContext(AuthContext);
     return (
         <div className="login">
         <div className="lContainer">
