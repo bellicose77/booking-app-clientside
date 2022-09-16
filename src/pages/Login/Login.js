@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import './Login.css'
@@ -12,13 +13,15 @@ const Login = () => {
         setCredentials((pre)=>({...pre,[e.target.name]:e.target.value}))
 
     };
-    const handleClick = (e) =>{
+    const handleClick = async (e) =>{
            e.preventDefault();
            dispatch({type:"LOGIN_START"});
            try{
+            const res = await axios.post("http://localhost:8000/api/auth/login",credentials);
+            dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
 
            }catch(err){
-            
+            dispatch({ type: "LOGIN_FAILURE", payload: err.response.data });
            }
     };
     return (
