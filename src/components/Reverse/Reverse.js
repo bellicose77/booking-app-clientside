@@ -1,9 +1,10 @@
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
 import useFetch from '../../hooks/useFetch';
 
 const Reverse = ({setOpenSlide,hotelId}) => {
+    const [selectedRooms,setSelectedRooms] = useState([])
     const{data,loading,error} = useFetch(`http://localhost:8000/api/hotel/room/${hotelId}`);
     //console.log(data)
     const handleSelect = (e) =>{
